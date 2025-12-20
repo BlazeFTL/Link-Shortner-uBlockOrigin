@@ -1,0 +1,12 @@
+! https://dupload.net/685le05z4ej3
+||blog.aiweave.site^$doc,replace=/content="3;/content="0;/
+blog.aiweave.site##+js(aopr, AdBDetected)
+blog.aiweave.site##+js(rpnt, script, timeLeft = duration, timeLeft = 0)
+blog.aiweave.site##.tag, #bottom-container-2, #bottom-container-timer, .submit-btn:others()
+blog.aiweave.site###bottomButton:style(display: block !important)
+
+https://vipshort.in/AKzkwelH
+vipshort.*##+js(rpnt, script, intentUrl;, fallbackUrl;)
+vipshort.*##+js(set, blurred, false)
+reelwealthreport.com,health.lakhisarainews.in###wpsafe-link:style(display: block !important;)
+reelwealthreport.com,health.lakhisarainews.in###wpsafe-link:others()

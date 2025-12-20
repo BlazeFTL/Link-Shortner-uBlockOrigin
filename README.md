@@ -1,4 +1,4 @@
-Everyone is expected to use firefox with mv2 uBlockOrigin in this thread...
+Everyone is expected to use firefox with mv2 uBlockOrigin(with firefox if possible)
 Theres no support for mv3 uBlockOrigin lite (considering only i help)
 You shouldn't have any dns/App that blocks ads in a browser
 Also no extra extension that does any blocking/modification in browser(Only uBlockOrigin is enough)

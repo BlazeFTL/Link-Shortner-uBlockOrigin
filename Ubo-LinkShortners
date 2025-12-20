@@ -73,3 +73,94 @@ xtglinks.com##.animated.zoomIn.wow.text-center.py-5
 xtglinks.com###link-view > p
 xtglinks.com##+js(set, blurred, false)
 
+! https://exe.io/0sElyAHH
+exe-links.com##.earning-steps
+exe-links.com##header
+exe-links.com##.actions
+exe-links.com##article
+exe-links.com##+js(trusted-click-element, '100, .link-button.button, 9000, .get-link, #invisibleCaptchaShortlink, 11000')
+
+! https://go.arlinks.in/ZfB7fj
+inrbabu.com##+js(trusted-click-element, '100, #wpsafe-link > a, 1000')
+inrbabu.com###wpsafe-link:style(display: block !important;)
+inrbabu.com###wpsafe-link:others()
+inrbabu.com,arlinks.in##+js(rpnt, script, /android/gi, false, stay, 1)
+arlinks.in##.r-bg
+arlinks.in##footer
+
+! https://novashort.com/Iwas75
+novashort.com##.article-card
+novashort.com##+js(set, adsbygoogle, {})
+novashort.com##+js(rpnt, script, window.open(url, '_blank');)
+novashort.com##+js(rpnt, script, 15000;, 10;)
+novashort.com##+js(rpnt, script, count % 2 === 0, false)
+novashort.com##.marketing-block.text-left
+novashort.com##.r-bg
+novashort.com##footer
+! Auto Click
+novashort.com##+js(trusted-click-element, '100, .btn-show.btn-next, 200, .btn-show.btn-continue')
+
+! https://work.ink/22hr/ito4wckq
+work.ink##+js(nowoif, youtube)
+work.ink##+js(no-fetch-if, /outbrain|criteo|thisiswaldo|media\.net|ohbayersbur|adligature|quantserve|srvtrck|\.css|\.js/)
+work.ink##+js(trusted-prevent-fetch, outbrain.com, outbrain)
+@@*$script,xhr,from=work.ink,to=googlesyndication.com|doubleclick.net|inmobi.com|fundingchoicesmessages.google.com
+
+! https://teraurl.com/DkLOEN
+hospital.solarpanelvale.com###btn6:style(display: block !important;)
+hospital.solarpanelvale.com###btn6:others()
+
+! https://linksconsole.com/CzfWLT
+@@||linksconsole.com/track-activity.php$ping
+techarmor.xyz##+js(no-fetch-if, googlesyndication)
+techarmor.xyz##.my-ad-container:style(clip-path: circle(0) !important;)
+techarmor.xyz##+js(rpnt, script, 1000, 10, condition, startTime)
+linksconsole.com,techarmor.xyz##+js(trusted-set, document.activeElement, { "value": {"tagName": "IFRAME" }}, runAt, 2)
+
+! https://earn4link.in/dtE44QITUa3
+india.hindivigyan.in##.dmca
+india.hindivigyan.in##.security-info
+india.hindivigyan.in##.stats
+loan.reelwealthreport.com,india.hindivigyan.in##+js(no-fetch-if, googlesyndication)
+loan.reelwealthreport.com,india.hindivigyan.in##+js(rpnt, script, /10000|1000|2000/gm, 10, condition, /wpsafelinkCounter|timer/gm)
+loan.reelwealthreport.com,india.hindivigyan.in###wpsafe-link:style(display: block !important;)
+loan.reelwealthreport.com,india.hindivigyan.in###wpsafe-link:others()
+loan.reelwealthreport.com,india.hindivigyan.in###overlay
+
+! https://pndk.to/0FXwHKJO
+||beixisys.com^$script,domain=tempatwisata.pro
+||rc.patagonenki.shop^$domain=tempatwisata.pro
+app.cekresi.me,tempatwisata.pro##+js(no-fetch-if, /outbrain\.com|adligature\.com|quantserve\.com|srvtrck\.com|googlesyndication/, {"type": "cors"})
+app.cekresi.me,tempatwisata.pro##+js(nowoif, _blank)
+app.cekresi.me,tempatwisata.pro##button[type="button"], #continue, .separator > div > div > h3, .font-semibold.text-white.bg-primary.inline-block.mx-auto, [src*="captcha"]:others()
+app.cekresi.me,tempatwisata.pro##+js(nano-sib, /.?/, *)
+! adtival.network
+adtival.network##.z-0.overflow-hidden.relative.w-full.rounded-lg.to-primary-800.from-primary-500.bg-gradient-to-r.p-8.min-h-\[189px\]
+adtival.network##button.py-2.px-6.text-primary-600.rounded-lg.border-primary-600.border-2.bg-white.items-center.flex
+adtival.network##.max-w-screen-lg:style(max-width: initial! Important;)
+adtival.network##.min-h-screen:style(min-height: initial! Important;)
+
+! https://joinurls.com/GDtvwpU
+hospital.yojnaguruji.com##.Tag, #btn6:others()
+hospital.yojnaguruji.com###btn6:style(display: block !important; margin-top: 150px !important;)
+
+! https://lksfy.com/rIxDD
+info.quizrent.com,info.tejtime24.com,info.sportswordz.com,info.raftarsamachar.in,tech.newspute.com,automobile.gadix.in##+js(aopr, AdBDetected)
+info.quizrent.com,info.tejtime24.com,info.sportswordz.com,info.raftarsamachar.in,tech.newspute.com,automobile.gadix.in##.tag, #bottom-container-2, #bottom-container-timer:others()
+info.quizrent.com,info.tejtime24.com,info.sportswordz.com,info.raftarsamachar.in,tech.newspute.com,automobile.gadix.in###bottomButton:style(display: block !important)
+info.quizrent.com,info.tejtime24.com,info.sportswordz.com,info.raftarsamachar.in,tech.newspute.com,automobile.gadix.in##+js(rpnt, script, timeLeft = duration, timeLeft = 0)
+
+! https://sfl.gl/AwW3vKF
+tutwuri.id##+js(nano-stb, /.?/, *)
+tutwuri.id##.cf-turnstile, #verify, [id^="btn-"], #second_open_placeholder:others()
+sfl.gl##.z-0.overflow-hidden.relative.w-full.rounded-lg
+sfl.gl##.min-h-screen:style(min-height: initial! important;)
+
+! https://xdabo.com/izOuW3v
+soft.cr3zyblog.com##+js(rpnt, script, /func.*justDetect.*warnarea.*?;/gm)
+soft.cr3zyblog.com##+js(rmnt, script, getComputedStyle(el)
+soft.cr3zyblog.com##+js(rmnt, script, popup)
+soft.cr3zyblog.com##+js(rpnt, script, * 1000, * 10, condition, intervalTime)
+soft.cr3zyblog.com###loading-screen, #yuidea-btmbtn:others()
+xdabo.com##footer
+xdabo.com##+js(rmnt, script, document.body.onclick)

@@ -170,3 +170,16 @@ short-jambo.ink##.banner-inner
 short-jambo.ink##.text-left
 short-jambo.ink##footer
 short-jambo.ink##+js(nowoif, _blank)
+
+! https://arolinks.com/G9a
+! https://vplink.in/yObrd
+jaankari.blog,readnews18.com,upexamresult.in,udarunachal.in,hindiinews.in,technicalsoul.com,meraresults.in,vacancyforjob.in,ppuresult.in,krishitalk.com,sarkarinaukrinetwork.com,realmeguru.com,naukaritimes24.in###btn7, #cross-snp2, #tp-snp2:style(display: block !important; margin-top: 180px !important;)
+jaankari.blog,readnews18.com,upexamresult.in,udarunachal.in,hindiinews.in,technicalsoul.com,meraresults.in,vacancyforjob.in,ppuresult.in,krishitalk.com,sarkarinaukrinetwork.com,realmeguru.com,naukaritimes24.in###btn7, #cross-snp2, #tp-snp2, .captcha-check, .text-center.cross-top, .text-center.tp-top, #tp-generate, #ce-text:others()
+!Arolinks Custom Button
+jaankari.blog,readnews18.com,upexamresult.in,udarunachal.in,hindiinews.in,technicalsoul.com,meraresults.in,vacancyforjob.in,ppuresult.in,krishitalk.com,sarkarinaukrinetwork.com,realmeguru.com,naukaritimes24.in##+js(trusted-create-html, #btn7, <a href="/readmore" role="button" id="cross-snp2" rel="nofollow" style="display: block; margin-top: 10px;">Continue Arolinks On 3rd Page</button></a>)
+! VPLink Custom Button
+jaankari.blog,readnews18.com,upexamresult.in,udarunachal.in,hindiinews.in,technicalsoul.com,meraresults.in,vacancyforjob.in,ppuresult.in,krishitalk.com,sarkarinaukrinetwork.com,realmeguru.com,naukaritimes24.in##+js(trusted-create-html, #btn7, <a href="/Insurancandstudy/learn_more.php" role="button" id="cross-snp2" rel="nofollow" style="display: block; margin-top: 10px;">Continue VpLinks On 3rd Page</button></a>)
+jaankari.blog,readnews18.com,upexamresult.in,udarunachal.in,hindiinews.in,technicalsoul.com,meraresults.in,vacancyforjob.in,ppuresult.in,krishitalk.com,sarkarinaukrinetwork.com,realmeguru.com,naukaritimes24.in###gcont
+jaankari.blog,readnews18.com,upexamresult.in,udarunachal.in,hindiinews.in,technicalsoul.com,meraresults.in,vacancyforjob.in,ppuresult.in,krishitalk.com,sarkarinaukrinetwork.com,realmeguru.com,naukaritimes24.in##+js(set, document.cookie, adcadg=insurance, adcadg=insurance)
+arolinks.com##+js(rpnt, script, /setTime.*[\s\S\n]*href.*/gm)
+arolinks.com##+js(rpnt, script, /function\s+getCookie\s*\([\s\S]*?\}\s*,\s*100\);/gm, function updateGetLinkWithQueryParamsFromCookie(){const queryCookieValue=getCookie('queryis');if(queryCookieValue){const cleanedQuery=queryCookieValue.replace(/[\[\]]/g,'');const links=document.getElementsByTagName('a');for(let link of links){if(link.innerText==="Get Link"){const originalHref=link.href.split('?')[0];link.href=originalHref+'?'+cleanedQuery;console.log('Updated href:',link.href);return true;}}}return false;}const interval=setInterval(()=>{const isUpdated=updateGetLinkWithQueryParamsFromCookie();if(isUpdated){clearInterval(interval);console.log('Stopped searching: <a> tag found and updated.');}},100);)

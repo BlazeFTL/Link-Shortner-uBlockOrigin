@@ -1,3 +1,18 @@
+! https://oii.io/COLQ5VPE
+||aknewz.xyz^$image,1p
+aknewz.xyz##[id^="ad"]
+aknewz.xyz##center:others()
+aknewz.xyz###iframe_id
+aknewz.xyz##+js(rpnt, script, stopCountdown();, resumeCountdown();)
+aknewz.xyz##+js(rpnt, script, stopTimeout();, startTimeout();)
+oii.io##+js(rmnt, script, adblock)
+oii.io##.text-left
+||fonts.googleapis.com^$stylesheet,domain=aknewz.xyz
+||fonts.gstatic.com^$font,domain=aknewz.xyz
+||twitter.com^$domain=aknewz.xyz
+||instagram.com^$script,domain=aknewz.xyz
+||gyazo.com^$image,domain=aknewz.xyz
+
 ! https://dupload.net/685le05z4ej3
 ||blog.aiweave.site^$doc,replace=/content="3;/content="0;/
 blog.aiweave.site##+js(aopr, AdBDetected)

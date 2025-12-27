@@ -1,3 +1,15 @@
+! https://shrtslug.biz/8xwjb
+yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(no-xhr-if, method:HEAD)
+yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##p, .wp-block-heading, .wp-block-list, .lg\:leading-tight.mt-1.lg\:tracking-tight.font-bold.lg\:text-5xl.text-4xl, .font-medium.text-sm.tracking-wider.uppercase.text-blue-400, [href="https://t.me/shrtfly"], h2, .wp-block-embed__wrapper
+! Reduces CountDowns
+yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(rpnt, script, /= 3;|= 2;/, = 0;, condition, count)
+yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(rpnt, script, progress_original = 6;, progress_original = 3;)
+yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(rpnt, script, countdown = 5;, countdown = 3;)
+! If you want to change tabs even on those 3 seconds
+yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(rpnt, script, = false;, = true;, condition, focused)
+yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(rpnt, script, start_focused || !document.hidden, true)
+yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(rpnt, script, focused || !document.hidden, true)
+
 ! https://oii.io/COLQ5VPE
 ||aknewz.xyz^$image,1p
 aknewz.xyz##[id^="ad"]

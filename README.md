@@ -1,3 +1,5 @@
+***Do not expect any help regarding Bitcoin,faucet site and shortners from me
+
 Everyone is expected to use firefox with mv2 uBlockOrigin(with firefox if possible)
 Theres no support for mv3 uBlockOrigin lite (considering only i help)
 You shouldn't have any dns/App that blocks ads in a browser

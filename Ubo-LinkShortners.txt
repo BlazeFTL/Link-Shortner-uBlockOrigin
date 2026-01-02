@@ -9,6 +9,7 @@ mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com###wpsafelin
 mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, wpsafelinkCount = 25;, wpsafelinkCount = 0;)
 mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, 2000);, 10);)
 mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##a[href][target=_blank]:remove-attr(href)
+!mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com###wpsafe-wait1:style(cursor: default !important; pointer-events: none !important;)
 shortxlinks.com##.sponsors-section
 shortxlinks.com##.bg_cover.footer-area
 

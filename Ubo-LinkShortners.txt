@@ -6,7 +6,7 @@ nowshort.com,link.liteshort.com##+js(rpnt, script, /window\.location\.href.*?;/g
 
 ! https://shortxlinks.in/JMWaxqQw
 mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com###wpsafelinkhuman, #wpsafe-wait1, #wpsafegenerate, #wpsafe-link, #wpsafe-wait2, .container, #wpsafe-generate:others()
-mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, wpsafelinkCount = 25;, wpsafelinkCount = 0;)
+mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, wpsafelinkCount = 25;, wpsafelinkCount = 10;)
 mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, 2000);, 10);)
 mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##a[href][target=_blank]:remove-attr(href)
 !mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com###wpsafe-wait1:style(cursor: default !important; pointer-events: none !important;)

@@ -1,8 +1,16 @@
+! https://liteshort.com/EiaNgDh
+! https://pvurl.site/OWijwok07kj
+sindhvacancy.com,jobsmbn.in,sarkarikhoj.com,kannursalafi.com,gadgetsaurgadiyan.com###notarobot, #rtg-snp2, #tp-snp2, #btn7:style(display: block !important;)
+sindhvacancy.com,jobsmbn.in,sarkarikhoj.com,kannursalafi.com,gadgetsaurgadiyan.com###notarobot, #rtg-snp2, #tp-snp2, .text-center.tp-top, #tp-generate, #btn7 > .text-center > .bt-success.btn:others()
+nowshort.com,link.liteshort.com##+js(rpnt, script, /window\.location\.href.*?;/gm)
+
 ! https://shortxlinks.in/JMWaxqQw
 mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com###wpsafelinkhuman, #wpsafe-wait1, #wpsafegenerate, #wpsafe-link, #wpsafe-wait2, .container, #wpsafe-generate:others()
 mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, wpsafelinkCount = 25;, wpsafelinkCount = 0;)
 mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, 2000);, 10);)
 mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##a[href][target=_blank]:remove-attr(href)
+shortxlinks.com##.sponsors-section
+shortxlinks.com##.bg_cover.footer-area
 
 ! https://shrtslug.biz/8xwjb
 yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(no-xhr-if, method:HEAD)

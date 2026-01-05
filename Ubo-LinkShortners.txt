@@ -200,11 +200,13 @@ sfl.gl##.min-h-screen:style(min-height: initial! important;)
 
 ! https://xdabo.com/izOuW3v
 ! https://short-jambo.ink/stre98
-fawzy.xyz,crizyman.online,soft.cr3zyblog.com##+js(rpnt, script, /func.*justDetect.*warnarea.*?;/gm)
-fawzy.xyz,crizyman.online,soft.cr3zyblog.com##+js(rmnt, script, getComputedStyle(el)
-fawzy.xyz,crizyman.online,soft.cr3zyblog.com##+js(rmnt, script, popup)
-fawzy.xyz,crizyman.online,soft.cr3zyblog.com##+js(rpnt, script, /\d{4}/, 10)
-fawzy.xyz,crizyman.online,soft.cr3zyblog.com###loading-screen, #yuidea-btmbtn:others()
+! https://swiftlnx.com/DvZjZ
+sitm.al3rbygo.com,fawzy.xyz,crizyman.online,soft.cr3zyblog.com##+js(rpnt, script, /func.*justDetect.*warnarea.*?;/gm)
+sitm.al3rbygo.com,fawzy.xyz,crizyman.online,soft.cr3zyblog.com##+js(rmnt, script, getComputedStyle(el)
+sitm.al3rbygo.com,fawzy.xyz,crizyman.online,soft.cr3zyblog.com##+js(rmnt, script, popup)
+sitm.al3rbygo.com,fawzy.xyz,crizyman.online,soft.cr3zyblog.com##+js(rpnt, script, /\d{4}/gms, 10)
+sitm.al3rbygo.com,fawzy.xyz,crizyman.online,soft.cr3zyblog.com###content_wrapper:style(font-size: 0rem !important;)
+sitm.al3rbygo.com,fawzy.xyz,crizyman.online,soft.cr3zyblog.com###loading-screen, #yuidea-btmbtn:others()
 xdabo.com##footer
 xdabo.com##+js(rmnt, script, document.body.onclick)
 ! short-jambo.ink
@@ -212,6 +214,8 @@ short-jambo.ink##.banner-inner
 short-jambo.ink##.text-left
 short-jambo.ink##footer
 short-jambo.ink##+js(nowoif, _blank)
+! swiftlnx.com
+swiftlnx.com##.blog-item
 
 ! https://arolinks.com/G9a
 ! https://vplink.in/yObrd

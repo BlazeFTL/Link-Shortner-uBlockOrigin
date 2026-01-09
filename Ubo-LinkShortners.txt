@@ -1,3 +1,12 @@
+! https://babylinks.in/BzoVo07e
+jkdamours.com,jobsheel.com,babylinks.in##+js(rpnt, script, 4000, 10)
+jkdamours.com,jobsheel.com##+js(noeval-if, /chp_?ad/)
+jkdamours.com,jobsheel.com##+js(set, count, 0)
+jkdamours.com,jobsheel.com##+js(rpnt, script, document.cookie.includes("adclicked=true"), true)
+jkdamours.com,jobsheel.com##+js(rpnt, script, "IFRAME", "BODY")
+jkdamours.com,jobsheel.com###btn6:style(display: block !important)
+jkdamours.com,jobsheel.com###tp-text, #btn6:others()
+
 ! https://liteshort.com/EiaNgDh
 ! https://pvurl.site/OWijwok07kj
 sindhvacancy.com,jobsmbn.in,sarkarikhoj.com,kannursalafi.com,gadgetsaurgadiyan.com###notarobot, #rtg-snp2, #tp-snp2, #btn7:style(display: block !important;)

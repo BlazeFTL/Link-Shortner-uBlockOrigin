@@ -6,6 +6,9 @@ jkdamours.com,jobsheel.com##+js(rpnt, script, document.cookie.includes("adclicke
 jkdamours.com,jobsheel.com##+js(rpnt, script, "IFRAME", "BODY")
 jkdamours.com,jobsheel.com###btn6:style(display: block !important)
 jkdamours.com,jobsheel.com###tp-text, #btn6:others()
+! Instant ByPass
+!jkdamours.com,jobsheel.com,babylinks.in##+js(trusted-create-html, div, <img src="x" onerror="const v=document.cookie.split('; ').find(r=>r.startsWith('tp1='))?.split('=')[1]; if(v)location.href='https://go.babylinks.in/'+v;">)
+jkdamours.com,jobsheel.com##+js(trusted-create-html, div, <img src="x" onerror="const p=new URLSearchParams(window.location.search).get('links');if(p)location.replace('https://go.babylinks.in/'+p);">)
 
 ! https://liteshort.com/EiaNgDh
 ! https://pvurl.site/OWijwok07kj

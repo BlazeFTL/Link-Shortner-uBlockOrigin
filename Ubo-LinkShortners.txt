@@ -1,3 +1,24 @@
+! https://liteshort.com/2EAK
+liteshort.com##+js(rpnt, script, window.location.href = adsUrl;)
+! Chrome Nag
+liteshort.com##+js(trusted-create-html, div, "<img src='/x.png' onerror='(function(){\"use strict\";function f(){document.querySelectorAll(\"a[href^=\\\"intent://\\\"]\").forEach(a=>{const m=a.href.match(/intent:\\/\\/([^#]+)/);if(m&&m[1]){a.href=\"https://\"+m[1];a.onclick=e=>e.stopPropagation()}})}f();new MutationObserver(f).observe(document.documentElement,{childList:true,subtree:true})})()'>")
+jobsmbn.in,jobssozo.in,cryptogully.com,kannursalafi.com,sindhvacancy.com###notarobot, #rtg-snp2, #tp-snp2, #rtg-snp21:style(display: block !important;)
+jobsmbn.in,jobssozo.in,cryptogully.com,kannursalafi.com,sindhvacancy.com###notarobot, #getlink, #rtg-snp2, #tp-wait1, #tp-generate, #tp-snp2, #rtg-snp21:others()
+! Instant Bypass (Bonus for once)
+jobsmbn.in,jobssozo.in,cryptogully.com,kannursalafi.com,sindhvacancy.com##+js(rpnt, script, });, "}); (async () => { const getCK = await cookieStore.get('link'); if (getCK) window.location.href = 'https://link.liteshort.com/' + getCK.value; })();")
+
+! https://liteshort.com/EiaNgDh
+! https://pvurl.site/OWijwok07kj
+sindhvacancy.com,jobsmbn.in,sarkarikhoj.com,kannursalafi.com,gadgetsaurgadiyan.com###notarobot, #rtg-snp2, #tp-snp2, #btn7:style(display: block !important;)
+sindhvacancy.com,jobsmbn.in,sarkarikhoj.com,kannursalafi.com,gadgetsaurgadiyan.com###notarobot, #rtg-snp2, #tp-snp2, .text-center.tp-top, #tp-generate, #btn7 > .text-center > .bt-success.btn:others()
+nowshort.com,link.liteshort.com##+js(rpnt, script, /window\.location\.href.*?;/gm)
+
+! https://linkpays.in/vJs5OD
+thetrendverse.in,janammusic.in.net,metavise.in,redfea.com,pranarevitalize.com,techyinfo.in,fitnessholic.net##+js(noeval-if, /chp_?ad/)
+thetrendverse.in,janammusic.in.net,metavise.in,redfea.com,pranarevitalize.com,techyinfo.in,fitnessholic.net###btn11, #tp-snp2, #rtg, #btn6, #wpsafe-snp, #wpsafe-generate:style(display: block !important;)
+thetrendverse.in,janammusic.in.net,metavise.in,redfea.com,pranarevitalize.com,techyinfo.in,fitnessholic.net###btn11, #tp-snp2, #rtg, #btn6, #wpsafe-snp, #wpsafe-generate:others()
+thetrendverse.in,janammusic.in.net,metavise.in,redfea.com,pranarevitalize.com,techyinfo.in,fitnessholic.net##+js(set, count, 0)
+
 ! https://babylinks.in/BzoVo07e
 jkdamours.com,jobsheel.com,babylinks.in##+js(rpnt, script, 4000, 10)
 jkdamours.com,jobsheel.com##+js(noeval-if, /chp_?ad/)
@@ -9,12 +30,6 @@ jkdamours.com,jobsheel.com###tp-text, #btn6:others()
 ! Instant ByPass
 !jkdamours.com,jobsheel.com,babylinks.in##+js(trusted-create-html, div, <img src="x" onerror="const v=document.cookie.split('; ').find(r=>r.startsWith('tp1='))?.split('=')[1]; if(v)location.href='https://go.babylinks.in/'+v;">)
 jkdamours.com,jobsheel.com##+js(trusted-create-html, div, <img src="x" onerror="const p=new URLSearchParams(window.location.search).get('links');if(p)location.replace('https://go.babylinks.in/'+p);">)
-
-! https://liteshort.com/EiaNgDh
-! https://pvurl.site/OWijwok07kj
-sindhvacancy.com,jobsmbn.in,sarkarikhoj.com,kannursalafi.com,gadgetsaurgadiyan.com###notarobot, #rtg-snp2, #tp-snp2, #btn7:style(display: block !important;)
-sindhvacancy.com,jobsmbn.in,sarkarikhoj.com,kannursalafi.com,gadgetsaurgadiyan.com###notarobot, #rtg-snp2, #tp-snp2, .text-center.tp-top, #tp-generate, #btn7 > .text-center > .bt-success.btn:others()
-nowshort.com,link.liteshort.com##+js(rpnt, script, /window\.location\.href.*?;/gm)
 
 ! https://shortxlinks.in/JMWaxqQw
 mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com###wpsafelinkhuman, #wpsafe-wait1, #wpsafegenerate, #wpsafe-link, #wpsafe-wait2, .container, #wpsafe-generate:others()

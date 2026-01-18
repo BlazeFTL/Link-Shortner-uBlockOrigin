@@ -2,7 +2,6 @@
 ! Instant ByPass
 urlshortx.io##+js(trusted-create-html, div, <img src='/n5dev.png' onerror='(function(){"use strict";const isMainContentPage=!!document.querySelector(".box-main");if(!isMainContentPage){const currentUrl=window.location.href;const targetUrl="https://hindisink.com/send.php?id="+currentUrl;window.location.replace(targetUrl);}else{console.log("Final page detected.");}})();'></img>)
 
-
 ! https://xtglinks.com/IxeJLI
 ! On ProLink InstantByPass
 !7vibelife.com,mealcold.com##+js(trusted-create-html, div, <img src="x" onerror='(function(){"use strict";const s=window.location.search;const i=new URLSearchParams(s).get("id");if(!i)return;if(location.hostname.includes("7vibelife")){location.replace("https://mealcold.com/prolink.php"+s)}else{location.replace("https://xtglinks.com/"+i)}})();'>)

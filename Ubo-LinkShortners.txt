@@ -375,3 +375,22 @@ labgame.io##+js(nano-sib, tid, *, 0.02)
 labgame.io##+js(trusted-set-cookie, ad_expire=true;, $now$)
 labgame.io##+js(rmnt, script, window.adblockDetector)
 labgame.io##+js(rmnt, script, DName)
+
+! https://cpm.icu/HEiggc
+blog24.me#@#+js(rmnt, script, location.assign)
+blog24.me#@#+js(rmnt, script, location.href)
+blog24.me##+js(rpnt, script, countdownValue = 3;, countdownValue = 0;)
+blog24.me##+js(nowoif)
+blog24.me##+js(alert-buster)
+finedieats.com##+js(aopw, document.write)
+finedieats.com##+js(rmnt, script, htmls)
+finedieats.com##+js(rmnt, script, redirectToPage)
+finedieats.com##+js(rpnt, script, timer = 25, timer = 0)
+finedieats.com##+js(rpnt, script, done = 25, done = 0)
+finedieats.com###ad:style(display: block !important)
+teamthunderofficial.eu.org##.banner-inner
+cpm.icu##+js(rpnt, script, document.getElementById('quick-link').submit(), "var a=location.href,b=a.match(new RegExp('[?&]url=([^&]+)'));b&&(location.href=decodeURIComponent(b[1]));")
+||ads-bitcoin.com$domain=teamthunderofficial.eu.org
+||rotate5url.com$domain=teamthunderofficial.eu.org
+||mblink.in$domain=teamthunderofficial.eu.org
+||discordapp.net$domain=teamthunderofficial.eu.org

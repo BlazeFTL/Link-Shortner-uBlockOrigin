@@ -397,3 +397,46 @@ cpm.icu##+js(rpnt, script, document.getElementById('quick-link').submit(), "var 
 ||rotate5url.com$domain=teamthunderofficial.eu.org
 ||mblink.in$domain=teamthunderofficial.eu.org
 ||discordapp.net$domain=teamthunderofficial.eu.org
+
+! Fuck ApkModDone Ads & Popups
+!@@*$script,xhr,domain=apkmoddone.com
+!@@*$xhr,domain=apkmoddone.com
+!apkmoddone.com#@#+js()
+*$script,redirect-rule=noopjs,domain=phongroblox.com|apkmoddone.com
+*$xhr,redirect-rule=nooptext,domain=phongroblox.com|apkmoddone.com
+*$frame,redirect-rule=noopframe,domain=phongroblox.com|apkmoddone.com
+||api-bdc.net/data/client-ip$xhr,domain=apkmoddone.com
+||worldtimeapi.org^$xhr,domain=apkmoddone.com
+||api.telegram.org^$xhr,domain=apkmoddone.com
+||api.ipify.org^$xhr,domain=apkmoddone.com
+||firebaseio.com^$domain=phongroblox.com|apkmoddone.com
+||gstatic.com^$script,domain=phongroblox.com|apkmoddone.com
+!@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=apkmoddone.com
+!@@||googlesyndication.com^$script,xhr,domain=phongroblox.com|apkmoddone.com
+!@@||doubleclick.net^$script,xhr,domain=phongroblox.com|apkmoddone.com
+apkmoddone.com##+js(nano-stb, location, *, 0.001)
+!apkmoddone.com#@#+js(no-fetch-if, /veepteero|tag\.min\.js/)
+apkmoddone.com,~dl.apkmoddone.com##+js(nowoif, /^/, 10)
+!apkmoddone.com,~dl.apkmoddone.com##+js(rpnt, script, ;return;, , condition, _0x)
+@@*$ghide,domain=phongroblox.com|dl.apkmoddone.com
+dl.apkmoddone.com,phongroblox.com##+js(nostif, /^/, 1000)
+dl.apkmoddone.com,phongroblox.com##+js(set-cookie, antiBlock, 1)
+dl.apkmoddone.com,phongroblox.com##+js(rpnt, script, return!![], return![])
+dl.apkmoddone.com,phongroblox.com##+js(set, aSl.gcd, 0)
+dl.apkmoddone.com,phongroblox.com##+js(nowoif, /\/4.+ _0/)
+dl.apkmoddone.com,phongroblox.com##+js(nowoif, !mediafire)
+dl.apkmoddone.com,phongroblox.com##+js(nano-stb, tick(), *, 0.001)
+dl.apkmoddone.com,phongroblox.com##+js(nano-sib, clearInterval, *, 0.001)
+!dl.apkmoddone.com,phongroblox.com##.pstL.button, .safeGoL.button:style(display:block !important;)
+dl.apkmoddone.com,phongroblox.com###hmVrfy, .keytsvd, .hmv, .aSlP, #aSlCnt, .safeGoL.button, .adNative, .adBanner, #apkAd:others()
+!dl.apkmoddone.com,phongroblox.com##.adNative, .adBanner, #apkAd:style(clip-path: circle(0) !important;)
+!dl.apkmoddone.com,phongroblox.com##.vsbl.aSlB:style(margin-top: -450px !important;)
+sitemini.io.vn,vip1s.top##.fxVer:others()
+dl.apkmoddone.com,phongroblox.com##+js(rpnt, script, /5000|15000/gm, 10)
+dl.apkmoddone.com,phongroblox.com##+js(rpnt, script, /20|14/gm, 0, condition, 15000)
+apkmoddone.com##+js(rpnt, script, /5000/gm, 10, condition, location)
+!apkmoddone.com##+js(trusted-replace-fetch-response, /\{*[\s\S\n]*?\}/, {"country": "BD"}, ipinfo.io)
+apkmoddone.com##+js(trusted-replace-fetch-response, /\{\s*"ip":\s*".*?",\s*"city":\s*".*?",\s*"region":\s*".*?",\s*"country":\s*".*?",\s*"loc":\s*".*?",\s*"org":\s*".*?",\s*"postal":\s*".*?",\s*"timezone":\s*".*?",\s*"readme":\s*".*?"\s*\}/, {"ip":"123.456.78.90","city":"Gotham","region":"Dark Knight Territory","country":"US","loc":"40.7128,-74.0060","org":"AS99999 Wayne Enterprises ISP","postal":"10001","timezone":"America/New_York","readme":"https://ipinfo.io/fakeauth"}, ipinfo.io)
+!||ipinfo.io^$xhr,domain=apkmoddone.com,replace=/\{*[\s\S\n]*?\}/{"country": "BD"}/gm
+!||ipinfo.io^$xhr,replace=/\{*[\s\S\n]*?\}/{"country": "BD"}/gm
+apkmoddone.com#%#//scriptlet('set-attr', '.adsbygoogle', 'data-ad-status', '0')

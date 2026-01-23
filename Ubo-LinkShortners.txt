@@ -1,10 +1,11 @@
 ! https://urlshortx.io/jP5n
+! https://linkshortx.in/TjxpNX
 ! Chrome Nag ByPass (Need Domain Update If Site Changes)
-urlshortx.io##+js(trusted-create-html, div, <img src='/n5dev.png' onerror='(function(){"use strict";const isMainContentPage=!!document.querySelector(".box-main");if(!isMainContentPage){const currentUrl=window.location.href;const targetUrl="https://hindisink.com/send.php?id="+currentUrl;window.location.replace(targetUrl);}else{console.log("Final page detected.");}})();'></img>)
+linkshortx.in,urlshortx.io##+js(trusted-create-html, div, <img src='/n5dev.png' onerror='(function(){"use strict";const isMainContentPage=!!document.querySelector(".box-main");if(!isMainContentPage){const currentUrl=window.location.href;const targetUrl="https://hindisink.com/send.php?id="+currentUrl;window.location.replace(targetUrl);}else{console.log("Final page detected.");}})();'></img>)
 ! Instant ByPass
 hindisink.com##+js(trusted-create-html, div, <img src='/n5dev.png' onerror='(function(){"use strict";function getCookie(name){const value="; "+document.cookie;const parts=value.split("; "+name+"=");if(parts.length===2)return parts.pop().split(";").shift();return null;}const encodedUrl=getCookie("link");if(encodedUrl){try{const decodedUrl=decodeURIComponent(encodedUrl);if(decodedUrl.startsWith("http")){console.log("Redirecting to:"\,decodedUrl);window.location.replace(decodedUrl);}}catch(e){console.error("Failed to decode cookie URL"\,e);}}})();'>)
 ! V2 All In One ByPass
-urlshortx.io##+js(trusted-create-html, div, <img src='/n5dev.png' onerror='(function(){"use strict";setTimeout(function(){const isMainContentPage=!!document.querySelector(".box-main");if(!isMainContentPage){const currentUrl=window.location.href;const targetUrl="https://hindisink.com/send.php?id="+currentUrl;window.location.replace(targetUrl);}else{console.log("Final page detected.");}}\,1000);})();'></img>)
+linkshortx.in,urlshortx.io##+js(trusted-create-html, div, <img src='/n5dev.png' onerror='(function(){"use strict";setTimeout(function(){const isMainContentPage=!!document.querySelector(".box-main");if(!isMainContentPage){const currentUrl=window.location.href;const targetUrl="https://hindisink.com/send.php?id="+currentUrl;window.location.replace(targetUrl);}else{console.log("Final page detected.");}}\,1000);})();'></img>)
 
 ! https://xtglinks.com/IxeJLI
 ! On ProLink InstantByPass

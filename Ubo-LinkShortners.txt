@@ -1,3 +1,8 @@
+! https://vipshort.in/FSWQ
+! Instant ByPass
+!hosting.ffindia.in##+js(rpnt, script, /window\.location\.href.*/, (function(){const i=new URLSearchParams(location.search).get("go");if(i){window.stop();location.replace("https://vipshort.in/"+i);}})())
+vipshort.in##+js(rpnt, script, (isAndroid, (false)
+
 ! https://urlshortx.io/jP5n
 ! https://linkshortx.in/TjxpNX
 ! Chrome Nag ByPass (Need Domain Update If Site Changes)

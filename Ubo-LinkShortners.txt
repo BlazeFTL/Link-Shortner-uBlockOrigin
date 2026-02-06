@@ -267,12 +267,13 @@ loan.reelwealthreport.com,india.hindivigyan.in###wpsafe-link:others()
 loan.reelwealthreport.com,india.hindivigyan.in###overlay
 
 ! https://pndk.to/0FXwHKJO
-||beixisys.com^$script,domain=tempatwisata.pro
-||rc.patagonenki.shop^$domain=tempatwisata.pro
-app.cekresi.me,tempatwisata.pro##+js(no-fetch-if, /outbrain\.com|adligature\.com|quantserve\.com|srvtrck\.com|googlesyndication/, {"type": "cors"})
-app.cekresi.me,tempatwisata.pro##+js(nowoif, _blank)
-app.cekresi.me,tempatwisata.pro##button[type="button"], #continue, .separator > div > div > h3, .font-semibold.text-white.bg-primary.inline-block.mx-auto, [src*="captcha"]:others()
-app.cekresi.me,tempatwisata.pro##+js(nano-sib, /.?/, *)
+||beixisys.com^$script,domain=tempatwisata.pro|go.datapendidikan.com
+||rc.patagonenki.shop^$domain=tempatwisata.pro|go.datapendidikan.com
+go.datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(no-fetch-if, /outbrain\.com|adligature\.com|quantserve\.com|srvtrck\.com|googlesyndication/, {"type": "cors"})
+go.datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(nowoif, _blank)
+go.datapendidikan.com,app.cekresi.me,tempatwisata.pro##button[type="button"], #continue, .separator > div > div > h3, .font-semibold.text-white.bg-primary.inline-block.mx-auto, [src*="captcha"]:others()
+go.datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(nano-sib, /.?/, *)
+go.datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(nano-stb, /.?/, *)
 ! adtival.network
 adtival.network##.z-0.overflow-hidden.relative.w-full.rounded-lg.to-primary-800.from-primary-500.bg-gradient-to-r.p-8.min-h-\[189px\]
 adtival.network##button.py-2.px-6.text-primary-600.rounded-lg.border-primary-600.border-2.bg-white.items-center.flex

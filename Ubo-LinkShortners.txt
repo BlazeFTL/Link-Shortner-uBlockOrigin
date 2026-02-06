@@ -1,3 +1,14 @@
+! https://softurl.in/dZ0Nqj
+! ShortxLinks
+mtc1.heygirlish.com,mtc1.sckp.shop,mtc2.shopizo.fun,mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com###wpsafelinkhuman, #wpsafe-wait1, #wpsafegenerate, #wpsafe-link, #wpsafe-wait2, .container, #wpsafe-generate, [id*="kdsafe-"]:others()
+mtc1.heygirlish.com,mtc1.sckp.shop,mtc2.shopizo.fun,mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, /4;|5;/gms, 0;)
+mtc1.heygirlish.com,mtc1.sckp.shop,mtc2.shopizo.fun,mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, 2000, 10)
+! Test Time Skip By Removing "!" From below line
+mtc1.heygirlish.com,mtc1.sckp.shop,mtc2.shopizo.fun,mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, /25;/gms, 10;)
+shortxlinks.com##.sponsors-section, .bg_cover.footer-area, .navbar-toggler
+softurl.in##.sponsors-section
+softurl.in##footer > .container > .row
+
 ! Cuty.io Extra
 ||vhit.io/scripts/vhit.js$script,domain=cuttlinks.com
 cety.app,cutlink.net,cutnet.net,cuttlinks.com,cutty.app,exe-links.com,exe-urls.com,exego.app,exnion.com,jixo.online##.premium-option.option-card

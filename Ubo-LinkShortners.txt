@@ -1,3 +1,13 @@
+! https://horrorpay.online/geJnS
+aradmag.online###offerOverlay
+aradmag.online##.post
+aradmag.online##.ad-middle
+aradmag.online##.ad-below-timer
+aradmag.online##+js(rpnt, script, step>1, true)
+aradmag.online##+js(rpnt, script,  1000);, 10);)
+! Instant ByPass
+aradmag.online##+js(trusted-create-html, div, <img src='/n5dev.png' onerror='const p=new URLSearchParams(window.location.search);const d=p.get("dex");if(d)window.location.href="http://horrorpay.online/"+d'>)
+
 ! https://softurl.in/dZ0Nqj
 ! ShortxLinks
 mtc1.heygirlish.com,mtc1.sckp.shop,mtc2.shopizo.fun,mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com###wpsafelinkhuman, #wpsafe-wait1, #wpsafegenerate, #wpsafe-link, #wpsafe-wait2, .container, #wpsafe-generate, [id*="kdsafe-"]:others()

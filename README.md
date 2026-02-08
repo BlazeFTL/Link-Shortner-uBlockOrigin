@@ -14,6 +14,12 @@ Do **not** expect any help or updates regarding:
 ### ⚙️ Required Environment
 For the filters to work as intended (and to be eligible for support), your setup **must** match the following:
 
+> [!CAUTION]
+> **Recommended:** Use only with uBlock Origin's default filters. Adding third-party lists may cause conflicts or errors.
+
+> [!TIP]
+> - Keep filters updated regularly
+
 * **Browser:** [Firefox](https://www.mozilla.org/firefox/) is highly recommended.
 * **Extension:** **uBlock Origin (MV2)**. 
     * *Note: There is no support for uBlock Origin Lite (MV3).*

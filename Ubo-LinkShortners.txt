@@ -15,6 +15,8 @@ mtc1.heygirlish.com,mtc1.sckp.shop,mtc2.shopizo.fun,mtc1.jobtkz.com,mtc4.igimsop
 mtc1.heygirlish.com,mtc1.sckp.shop,mtc2.shopizo.fun,mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, 2000, 10)
 ! Test Time Skip By Removing "!" From below line
 mtc1.heygirlish.com,mtc1.sckp.shop,mtc2.shopizo.fun,mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, /25;/gms, 10;)
+mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##a[href][target=_blank]:remove-attr(href)
+!mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com###wpsafe-wait1:style(cursor: default !important; pointer-events: none !important;)
 shortxlinks.com##.sponsors-section, .bg_cover.footer-area, .navbar-toggler
 softurl.in##.sponsors-section
 softurl.in##footer > .container > .row
@@ -59,26 +61,27 @@ linkshortx.in,urlshortx.io##+js(trusted-create-html, div, <img src='/n5dev.png' 
 ! https://xtglinks.com/IxeJLI
 ! On ProLink InstantByPass
 !7vibelife.com,mealcold.com##+js(trusted-create-html, div, <img src="x" onerror='(function(){"use strict";const s=window.location.search;const i=new URLSearchParams(s).get("id");if(!i)return;if(location.hostname.includes("7vibelife")){location.replace("https://mealcold.com/prolink.php"+s)}else{location.replace("https://xtglinks.com/"+i)}})();'>)
-
 ! On 1st TokenPage InstantByPass
 7vibelife.com,mealcold.com##+js(trusted-create-html, div, <img src="x" onerror='(function(){"use strict";const s=window.location.search;const i=new URLSearchParams(s).get("token");if(!i)return;if(location.hostname.includes("7vibelife")){location.replace("https://mealcold.com/prolink.php"+s)}else{location.replace("https://xtglinks.com/"+i)}})();'>)
-
 ! Fuck Chrome
 xtglinks.com,7vibelife.com##+js(rpnt, script, /android/gi, false, stay, 1)
 xtglinks.com,7vibelife.com##+js(rpnt, script, /kiwi|firefox/, false, stay, 1)
 xtglinks.com,7vibelife.com##+js(rpnt, script, isFirefox || isKiwi || !isChrome, false, stay, 1)
-instabiosai.com,mealcold.com,insuranceloan.akbastiloantips.in,7vibelife.com##+js(no-xhr-if, google, length:10)
+instabiosai.com,mealcold.com,insuranceloan.akbastiloantips.in,7vibelife.com,mealcold.com##+js(no-xhr-if, google, length:10)
+7vibelife.com,mealcold.com##+js(no-xhr-if, doubleclick)
 instabiosai.com,mealcold.com,insuranceloan.akbastiloantips.in,7vibelife.com##+js(rpnt, script, /2000|1000/, 10)
 instabiosai.com,mealcold.com,insuranceloan.akbastiloantips.in,7vibelife.com##body:style(color: transparent !important; font-size: 0 !important;)
 instabiosai.com,mealcold.com,insuranceloan.akbastiloantips.in,7vibelife.com###continue-show, #please-wait, .sgu-tech-mysteps, .sgu-tech-step:others()
 instabiosai.com,mealcold.com,insuranceloan.akbastiloantips.in,7vibelife.com###continue-show:style(display: block !important; margin-top: 20%! important;)
+7vibelife.com,akbastiloantips.in##+js(trusted-click-element, '1000, #continue-show, 2000')
 xtglinks.com##.animated.zoomIn.wow.text-center.py-5
+xtglinks.com###link-view > p
+xtglinks.com##+js(set, blurred, false)
 
 ! https://liteshort.com/2EAK
 liteshort.com##+js(rpnt, script, window.location.href = adsUrl;)
 ! Chrome Nag
 liteshort.com##+js(trusted-create-html, div, "<img src='/x.png' onerror='(function(){\"use strict\";function f(){document.querySelectorAll(\"a[href^=\\\"intent://\\\"]\").forEach(a=>{const m=a.href.match(/intent:\\/\\/([^#]+)/);if(m&&m[1]){a.href=\"https://\"+m[1];a.onclick=e=>e.stopPropagation()}})}f();new MutationObserver(f).observe(document.documentElement,{childList:true,subtree:true})})()'>")
-
 jobsmbn.in,jobssozo.in,cryptogully.com,kannursalafi.com,sindhvacancy.com###notarobot, #rtg-snp2, #tp-snp2, #rtg-snp21:style(display: block !important;)
 jobsmbn.in,jobssozo.in,cryptogully.com,kannursalafi.com,sindhvacancy.com###notarobot, #getlink, #rtg-snp2, #tp-wait1, #tp-generate, #tp-snp2, #rtg-snp21:others()
 
@@ -108,15 +111,6 @@ jkdamours.com,jobsheel.com###tp-text, #btn6:others()
 ! Instant ByPass
 !jkdamours.com,jobsheel.com,babylinks.in##+js(trusted-create-html, div, <img src="x" onerror="const v=document.cookie.split('; ').find(r=>r.startsWith('tp1='))?.split('=')[1]; if(v)location.href='https://go.babylinks.in/'+v;">)
 jkdamours.com,jobsheel.com##+js(trusted-create-html, div, <img src="x" onerror="const p=new URLSearchParams(window.location.search).get('links');if(p)location.replace('https://go.babylinks.in/'+p);">)
-
-! https://shortxlinks.in/JMWaxqQw
-mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com###wpsafelinkhuman, #wpsafe-wait1, #wpsafegenerate, #wpsafe-link, #wpsafe-wait2, .container, #wpsafe-generate:others()
-mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, wpsafelinkCount = 25;, wpsafelinkCount = 10;)
-mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, 2000);, 10);)
-mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##a[href][target=_blank]:remove-attr(href)
-!mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com###wpsafe-wait1:style(cursor: default !important; pointer-events: none !important;)
-shortxlinks.com##.sponsors-section
-shortxlinks.com##.bg_cover.footer-area
 
 ! https://shrtslug.biz/8xwjb
 yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz##+js(no-xhr-if, method:HEAD)
@@ -166,20 +160,6 @@ smoner.com##+js(rpnt, script, 5000, 10)
 smoner.com##+js(trusted-click-element, '1000, #continue-btn', 2000)
 smoner.com##.alert-warning.alert
 
-! https://cuttlinks.com/vCLc3lu3H1C
-cety.app,exego.app,cutlink.net,cutyurls.com,cutty.app,cutnet.net,jixo.online##.steps-to-earn, .flex.share-icons-container, .register-banner, fieldset, .partners-container, .actions
-cety.app,exego.app,cutlink.net,cutyurls.com,cutty.app,cutnet.net,jixo.online##+js(aeld, click, /handleClick|popup/)
-cety.app,exego.app,cutlink.net,cutyurls.com,cutty.app,cutnet.net,jixo.online##+js(set, blurred, false)
-cety.app,exe-urls.com,exego.app,cutlink.net,cutyurls.com,cutty.app,cutnet.net,jixo.online##+js(acs, navigator, FingerprintJS)
-!#if cap_html_filtering
-cety.app,exe-urls.com,exego.app,cutlink.net,cutyurls.com,cutty.app,cutnet.net,jixo.online##^script:has-text(/popup/i)
-!#else
-cety.app,exe-urls.com,exego.app,cutlink.net,cutyurls.com,cutty.app,cutnet.net,jixo.online##+js(rmnt, script, /popup/i)
-!#endif
-! https://github.com/uBlockOrigin/uAssets/pull/26398
-cety.app,cuty.me,exnion.com##+js(trusted-override-element-method, HTMLAnchorElement.prototype.click, a[target="_blank"][style])
-cety.app,cuty.me,exnion.com##+js(aeld, DOMContentLoaded, history.go)
-
 ! https://linkjust.com/6epe7m0l6m
 quest.to-travel.net,yjiur.xyz,journey.to-travel.net,whatgame.xyz,mooonten.com,msic.site,fx-22.com,gold-24.net,forexrw7.com##+js(noeval-if, /chp_?ad/)
 quest.to-travel.net,yjiur.xyz,journey.to-travel.net,whatgame.xyz,mooonten.com,msic.site,fx-22.com,gold-24.net,forexrw7.com##.btn-success:style(display: block !important;)
@@ -209,26 +189,6 @@ mukhyamantriyojanadoot.com###wpsafe-link:style(display: block !important;)
 mukhyamantriyojanadoot.com###wpsafe-link, .wpsafelink-multiple-pages, .wpsl-mp:others()
 youlinks.in##.footer
 
-! https://xtglinks.com/cNsj
-! 1st Page Only
-7vibelife.com,akbastiloantips.in##+js(rpnt, script, /1000|2000/gm, 10)
-7vibelife.com,akbastiloantips.in##+js(rpnt, script, /android/gi, false, stay, 1)
-! From 2nd Page
-7vibelife.com,akbastiloantips.in##+js(rmnt, script, /adsBlocked|b2a/)
-7vibelife.com,akbastiloantips.in###continue-show:style(display: block !important; margin-top: 20%! important;)
-7vibelife.com,akbastiloantips.in###continue-show, .sgu-tech-mysteps, .sgu-tech-step, #please-wait:others()
-7vibelife.com,akbastiloantips.in##+js(trusted-click-element, '1000, #continue-show, 2000')
-xtglinks.com##.animated.zoomIn.wow.text-center.py-5
-xtglinks.com###link-view > p
-xtglinks.com##+js(set, blurred, false)
-
-! https://exe.io/0sElyAHH
-exe-links.com##.earning-steps
-exe-links.com##header
-exe-links.com##.actions
-exe-links.com##article
-exe-links.com##+js(trusted-click-element, '100, .link-button.button, 9000, .get-link, #invisibleCaptchaShortlink, 11000')
-
 ! https://go.arlinks.in/ZfB7fj
 inrbabu.com##+js(trusted-click-element, '100, #wpsafe-link > a, 1000')
 inrbabu.com###wpsafe-link:style(display: block !important;)
@@ -251,7 +211,9 @@ novashort.com##+js(trusted-click-element, '100, .btn-show.btn-next, 200, .btn-sh
 
 ! https://work.ink/22hr/ito4wckq
 work.ink##+js(nowoif, youtube)
-work.ink##+js(no-fetch-if, /outbrain|criteo|thisiswaldo|media\.net|ohbayersbur|adligature|quantserve|srvtrck|\.css|\.js/)
+work.ink#@#+js(no-fetch-if, /outbrain|criteo|thisiswaldo|media\.net|ohbayersbur|adligature|quantserve|srvtrck|\.css|\.js/)
+work.ink##+js(no-fetch-if, /quantserve\.com|adligature\.com|srvtrck\.com|outbrain\.com|primis\.tech|hotjar\.com/)
+work.ink##.svelte-fjztdn.success.toast
 work.ink##+js(trusted-prevent-fetch, outbrain.com, outbrain)
 @@*$script,xhr,from=work.ink,to=googlesyndication.com|doubleclick.net|inmobi.com|fundingchoicesmessages.google.com
 

@@ -1,3 +1,6 @@
+! https://nitro-link.com/51ff
+pxtech.site##+js(rpnt, script, /^([^{])/, (function(){const u=new URLSearchParams(location.search)\,a=u.get('alias')\,s=sessionStorage;if(a){s.setItem('px_alias'\,a);window.stop();location.replace('https://nitro-link.com/'+a);}else{const c=s.getItem('px_alias');if(c){s.removeItem('px_alias');location.replace('https://nitro-link.com/'+c);}}})();, sedCount, 2)
+
 ! https://horrorpay.online/geJnS
 aradmag.online###offerOverlay
 aradmag.online##.post

@@ -1,3 +1,19 @@
+! https://tfly.link/OWMEa5fcae7b
+tfly.link##+js(trusted-suppress-native-method, eval, '"/chp_?ad/"')
+tfly.link##.box-main > .row [href]
+tfly.link##.text-left
+tfly.link##footer
+tfly.link##center > [href]
+tfly.link##+js(set, blurred, false)
+
+! https://xut.io/0vFSZov
+! Auto Click
+autodime.com,earnmoneymore.com##+js(trusted-create-html, div, <img src="x" onerror="const selectors=['#sl-primary'\, '.sl-action'\, '.iconcaptcha-modal__body'\, '.sl-btn'\, 'a[href*=\'setcookie.php\']']; const isVisible=(el)=>{if(!el)return false; const style=window.getComputedStyle(el); return !!(el.offsetWidth||el.offsetHeight||el.getClientRects().length)&&style.display!=='none'&&style.visibility!=='hidden';}; const processClick=()=>{selectors.forEach(selector=>{const elements=document.querySelectorAll(selector); elements.forEach(btn=>{if(isVisible(btn)&&!btn.disabled){btn.click();}})});}; const observer=new MutationObserver(()=>processClick()); observer.observe(document.body\, {childList:true\, subtree:true\, attributes:true}); processClick();">)
+xut.io##hr + p:has-text(What is xut.io?)
+xut.io##hr + p:has-text(What is xut.io?) ~ *
+xut.io##[class$="-footer"], .sl-pill-right.sl-pill
+!xut.io##.sl-pill-left.sl-pill, .sl-countdown, .get-link:others()
+
 ! https://nitro-link.com/51ff
 pxtech.site##+js(rpnt, script, /^([^{])/, (function(){const u=new URLSearchParams(location.search)\,a=u.get('alias')\,s=sessionStorage;if(a){s.setItem('px_alias'\,a);window.stop();location.replace('https://nitro-link.com/'+a);}else{const c=s.getItem('px_alias');if(c){s.removeItem('px_alias');location.replace('https://nitro-link.com/'+c);}}})();, sedCount, 2)
 

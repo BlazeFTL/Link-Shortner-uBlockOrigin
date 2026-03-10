@@ -1,3 +1,23 @@
+! https://pndk.to/vCkOKN5RYx
+||beixisys.com^$script,domain=tempatwisata.pro|datapendidikan.com
+||rc.patagonenki.shop^$domain=tempatwisata.pro|datapendidikan.com
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(no-fetch-if, /outbrain\.com|adligature\.com|quantserve\.com|srvtrck\.com|googlesyndication/, {"type": "cors"})
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(nowoif, _blank)
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##button[type="button"], #continue, .separator > div > div > h3, .font-semibold.text-white.bg-primary.inline-block.mx-auto, [src*="captcha"]:others()
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(nano-sib, /.?/, *)
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(nano-stb, /.?/, *)
+! Counter these now 
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(rpnt, script, /\d{4}/gms, 10, condition, /count/i)
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(rpnt, script, /this\.endAt = Date\.now\(\) \+ \(this\.cd \* 1000\)/gm, this.endAt = Date.now())
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(rpnt, script, /this\.cd = remaining > 0 \? remaining : 0/gm, this.cd = 0)
+datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(rpnt, script, /this\.ab = true/gm, this.ab = false)
+!datapendidikan.com,app.cekresi.me,tempatwisata.pro##+js(rpnt, script, /this\.endAt = Date\.now\(\) \+ \(this\.cd \* 1000\)/gm, setTimeout(() => { this.endAt = Date.now() }\, 1))
+! adtival.network
+adtival.network##.z-0.overflow-hidden.relative.w-full.rounded-lg.to-primary-800.from-primary-500.bg-gradient-to-r.p-8.min-h-\[189px\]
+adtival.network##button.py-2.px-6.text-primary-600.rounded-lg.border-primary-600.border-2.bg-white.items-center.flex
+adtival.network##.max-w-screen-lg:style(max-width: initial! Important;)
+adtival.network##.min-h-screen:style(min-height: initial! Important;)
+
 ! https://tfly.link/OWMEa5fcae7b
 tfly.link##+js(trusted-suppress-native-method, eval, '"/chp_?ad/"')
 tfly.link##.box-main > .row [href]

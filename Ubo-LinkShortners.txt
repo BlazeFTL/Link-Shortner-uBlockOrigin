@@ -55,13 +55,15 @@ aradmag.online##+js(trusted-create-html, div, <img src='/n5dev.png' onerror='con
 
 ! https://softurl.in/dZ0Nqj
 ! ShortxLinks
-mtc1.heygirlish.com,mtc1.sckp.shop,mtc2.shopizo.fun,mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com###wpsafelinkhuman, #wpsafe-wait1, #wpsafegenerate, #wpsafe-link, #wpsafe-wait2, .container, #wpsafe-generate, [id*="kdsafe-"]:others()
-mtc1.heygirlish.com,mtc1.sckp.shop,mtc2.shopizo.fun,mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, /4;|5;/gms, 0;)
-mtc1.heygirlish.com,mtc1.sckp.shop,mtc2.shopizo.fun,mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, 2000, 10)
+mtc1.nkrmusic.in.net,mtc1.awaskit.in,mtc1.heygirlish.com,mtc1.sckp.shop,mtc2.shopizo.fun,mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com###wpsafelinkhuman, #wpsafe-wait1, #wpsafegenerate, #wpsafe-link, #wpsafe-wait2, .container, #wpsafe-generate, [id*="kdsafe-"]:others()
+mtc1.nkrmusic.in.net,mtc1.awaskit.in,mtc1.heygirlish.com,mtc1.sckp.shop,mtc2.shopizo.fun,mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, /4;|5;/gms, 0;)
+mtc1.nkrmusic.in.net,mtc1.awaskit.in,mtc1.heygirlish.com,mtc1.sckp.shop,mtc2.shopizo.fun,mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, 2000, 10)
 ! Test Time Skip By Removing "!" From below line
-mtc1.heygirlish.com,mtc1.sckp.shop,mtc2.shopizo.fun,mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, /25;/gms, 10;)
-mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##a[href][target=_blank]:remove-attr(href)
+mtc1.nkrmusic.in.net,mtc1.awaskit.in,mtc1.heygirlish.com,mtc1.sckp.shop,mtc2.shopizo.fun,mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(rpnt, script, /25;/gms, 10;)
+mtc1.nkrmusic.in.net,mtc1.awaskit.in,mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##a[href][target=_blank]:remove-attr(href)
 !mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com###wpsafe-wait1:style(cursor: default !important; pointer-events: none !important;)
+! Auto Click
+mtc1.nkrmusic.in.net,mtc1.awaskit.in,mtc1.heygirlish.com,mtc1.sckp.shop,mtc2.shopizo.fun,mtc1.jobtkz.com,mtc4.igimsopd.com,mtc3.jobsvb.in,mtc5.flexthecar.com##+js(trusted-create-html, div, <img src="x" onerror="const selectors=['#wpsafelinkhuman'\, '#wpsafe-generate a'\, '#wpsafe-link a']; const clicked=new Set(); const isVisible=(el)=>{if(!el)return false; const s=getComputedStyle(el); return s.display!=='none'&&el.offsetParent!==null;}; const run=()=>{selectors.forEach(sel=>{const el=document.querySelector(sel); if(el&&isVisible(el)&&!clicked.has(sel)){el.dispatchEvent(new MouseEvent('click'\,{bubbles:true\,cancelable:true\,view:window})); clicked.add(sel);}});}; setInterval(run\, 700); const obs=new MutationObserver(run); obs.observe(document\,{childList:true\,subtree:true\,attributes:true}); run();">)
 shortxlinks.com##.sponsors-section, .bg_cover.footer-area, .navbar-toggler
 softurl.in##.sponsors-section
 softurl.in##footer > .container > .row

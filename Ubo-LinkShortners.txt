@@ -96,6 +96,16 @@ sub4unlock.io##.locked-action-link:remove-attr(href)
 ! Instant ByPass
 !hosting.ffindia.in##+js(rpnt, script, /window\.location\.href.*/, (function(){const i=new URLSearchParams(location.search).get("go");if(i){window.stop();location.replace("https://vipshort.in/"+i);}})())
 vipshort.in##+js(rpnt, script, (isAndroid, (false)
+! https://vipshort.in/AKzkwelH
+reelwealthreport.com,health.lakhisarainews.in###wpsafe-link:style(display: block !important;)
+reelwealthreport.com,health.lakhisarainews.in###wpsafe-link:others()
+! https://vipshort.in/MQlv
+groomstyleguide.com##+js(rmnt, script, /antiAdBlockerHandler|AdBDetected/)
+groomstyleguide.com##.get_btn, #btn7, #vipForm, form, .pro_btn:style(display: block !important;)
+groomstyleguide.com##.step_box > h4, .step_box.get_btn, #btn7, #vipForm, form, .pro_btn:others()
+groomstyleguide.com###rtg-snp21:remove-class(no_display)
+vipshort.in##+js(rpnt, script, intentUrl;, fallbackUrl;)
+vipshort.in##+js(set, blurred, false)
 
 ! https://urlshortx.io/jP5n
 ! https://linkshortx.in/TjxpNX
@@ -193,12 +203,6 @@ blog.aiweave.site##+js(aopr, AdBDetected)
 blog.aiweave.site##+js(rpnt, script, timeLeft = duration, timeLeft = 0)
 blog.aiweave.site##.tag, #bottom-container-2, #bottom-container-timer, .submit-btn:others()
 blog.aiweave.site###bottomButton:style(display: block !important)
-
-! https://vipshort.in/AKzkwelH
-vipshort.*##+js(rpnt, script, intentUrl;, fallbackUrl;)
-vipshort.*##+js(set, blurred, false)
-reelwealthreport.com,health.lakhisarainews.in###wpsafe-link:style(display: block !important;)
-reelwealthreport.com,health.lakhisarainews.in###wpsafe-link:others()
 
 ! https://smoner.com/iS83vY
 smoner.com##+js(rmnt, script, checkAdsBlocked)

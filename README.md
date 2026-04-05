@@ -1,3 +1,17 @@
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Link-Shortner" />
+</div>
+
+
+
+
+<div align="center">
+  <p><i>"If a site has a anti-adblock, a timer, or an annoying popup, I'm already there."</i></p>
+</div>
+
+
+---
+
 ## 🛡️ Support Policy & Requirements
 
 > [!IMPORTANT]

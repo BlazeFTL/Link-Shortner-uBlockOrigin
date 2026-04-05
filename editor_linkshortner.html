@@ -59,7 +59,6 @@ body { background:var(--bg); color:var(--text); font-family:'Roboto',sans-serif;
 #sDot.ok      { background:#69F0AE; }
 #sDot.err     { background:#FF5252; }
 #sDot.loading { background:#FFD740; animation:blink 0.8s infinite; }
-@keyframes blink{0%,100%{opacity:1}50%{opacity:0.2}}
 
 #patTopBtn {
   display:flex; align-items:center; gap:5px;
@@ -67,7 +66,6 @@ body { background:var(--bg); color:var(--text); font-family:'Roboto',sans-serif;
   border-radius:8px; padding:5px 10px; font-family:'Roboto',sans-serif;
   font-size:12px; font-weight:500; cursor:pointer; white-space:nowrap;
 }
-#patTopBtn:active { opacity:0.7; }
 #patDot { width:10px;height:10px;border-radius:50%;background:#FF5252;flex-shrink:0;transition:background 0.3s; }
 #patDot.set { background:#69F0AE; }
 
@@ -85,10 +83,9 @@ body { background:var(--bg); color:var(--text); font-family:'Roboto',sans-serif;
   display:inline-flex; align-items:center; gap:4px;
 }
 .btn:active { opacity:0.75; transform:scale(0.96); }
-.btn-flat   { background:transparent; color:var(--primary); }
-.btn-flat:hover { background:var(--primary-light); }
+.btn-flat { background:transparent; color:var(--primary); }
 .btn-raised { background:var(--primary); color:white; box-shadow:var(--shadow); }
-.btn-green  { background:#388E3C; color:white; box-shadow:var(--shadow); }
+.btn-green { background:#388E3C; color:white; box-shadow:var(--shadow); }
 .btn:disabled { opacity:0.3; pointer-events:none; }
 
 #modBadge {
@@ -98,7 +95,7 @@ body { background:var(--bg); color:var(--text); font-family:'Roboto',sans-serif;
 }
 #modBadge.show { display:inline-block; }
 
-/* ── SEARCH PANEL (top-anchored, Material) ────── */
+/* ── SEARCH PANEL ────────────────────────────────────── */
 #searchPanel {
   display:none; flex-shrink:0;
   background:#FFFFFF;
@@ -118,7 +115,6 @@ body { background:var(--bg); color:var(--text); font-family:'Roboto',sans-serif;
   background:var(--surface2); color:var(--text); outline:none;
 }
 .sp-field input:focus { border-color:var(--primary); background:#fff; }
-.sp-match-count { position:absolute; right:8px; font-size:11px; font-weight:600; color:var(--primary); pointer-events:none; }
 .sp-toggles { display:flex; gap:2px; position:absolute; right:8px; }
 .sp-tog {
   font-family:'Roboto Mono',monospace; font-size:10px; font-weight:700;
@@ -306,9 +302,8 @@ import {
   openSearchPanel as cmOpenPanel, closeSearchPanel as cmClosePanel,
   getSearchQuery, selectNextOccurrence 
 } from '@codemirror/search';
-import { HighlightStyle, syntaxHighlighting } from '@codemirror/language';
 
-// ── GitHub config ──────────────────────────────────────
+// GitHub config
 const OWNER = 'BlazeFTL';
 const REPO  = 'Link-Shortner-uBlockOrigin';
 const FILE  = 'Ubo-LinkShortners.txt';
@@ -464,9 +459,25 @@ function updateMatchCount() {
 
 window.spSearch = function() {
   const q = document.getElementById('spFind').value;
-  if (!q) { view.dispatch({ effects: setSearchQuery.of(buildSearchQuery('')) }); document.getElementById('spCount').textContent = ''; return; }
-  view.dispatch({ effects: setSearchQuery.of(buildSearchQuery(q)) });
+  const query = buildSearchQuery(q);
+  
+  // Update internal CM search state
+  view.dispatch({ effects: setSearchQuery.of(query) });
   updateMatchCount();
+
+  if (!q) return;
+
+  // Jump to first match immediately
+  if (query.valid) {
+    const cursor = query.getCursor(view.state.doc);
+    const firstMatch = cursor.next();
+    if (!firstMatch.done) {
+      view.dispatch({
+        selection: { anchor: firstMatch.value.from, head: firstMatch.value.to },
+        scrollIntoView: true
+      });
+    }
+  }
 };
 
 window.spNext = function() { findNext(view); updateMatchCount(); };

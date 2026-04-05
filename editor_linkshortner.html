@@ -98,7 +98,7 @@ body { background:var(--bg); color:var(--text); font-family:'Roboto',sans-serif;
 }
 #modBadge.show { display:inline-block; }
 
-/* ── SEARCH PANEL ────────────────────────────────────── */
+/* ── SEARCH PANEL (top-anchored, Material) ────── */
 #searchPanel {
   display:none; flex-shrink:0;
   background:#FFFFFF;
@@ -215,7 +215,7 @@ body { background:var(--bg); color:var(--text); font-family:'Roboto',sans-serif;
 <div id="topBar">
   <div class="app-info">
     <div class="app-title">Link Shortener Editor</div>
-    <div class="app-file">My-Filters_Link_Shortner.txt</div>
+    <div class="app-file">Ubo-LinkShortners.txt</div>
   </div>
   <div class="top-right">
     <div id="statusChip"><div id="sDot"></div><span id="sText">Not loaded</span></div>
@@ -304,13 +304,17 @@ import {
   findNext, findPrevious,
   replaceNext, replaceAll as cmReplaceAll,
   openSearchPanel as cmOpenPanel, closeSearchPanel as cmClosePanel,
-  getSearchQuery, selectNextOccurrence
+  getSearchQuery, selectNextOccurrence 
 } from '@codemirror/search';
+import { HighlightStyle, syntaxHighlighting } from '@codemirror/language';
 
-// GitHub config
-const OWNER = 'BlazeFTL', REPO = 'My-Filters';
-const FILE  = 'My-Filters_Link_Shortner.txt';
-const RAW   = `https://raw.githubusercontent.com/${OWNER}/${REPO}/refs/heads/main/${FILE}`;
+// ── GitHub config ──────────────────────────────────────
+const OWNER = 'BlazeFTL';
+const REPO  = 'Link-Shortner-uBlockOrigin';
+const FILE  = 'Ubo-LinkShortners.txt';
+const BRANCH = 'main';
+
+const RAW   = `https://raw.githubusercontent.com/${OWNER}/${REPO}/refs/heads/${BRANCH}/${FILE}`;
 const API   = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${FILE}`;
 
 let fileSha = null, originalContent = '';
@@ -496,6 +500,7 @@ window.loadFile = async function() {
   setStatus('loading', 'Fetching...');
   try {
     const r = await fetch(RAW + '?t=' + Date.now());
+    if (!r.ok) throw new Error('HTTP ' + r.status);
     const text = await r.text();
     view.dispatch({ changes: { from: 0, to: view.state.doc.length, insert: text } });
     originalContent = text;
@@ -503,7 +508,7 @@ window.loadFile = async function() {
     setStatus('ok', text.split('\n').length + ' lines');
     document.getElementById('saveBtn').disabled = false;
     fetchSha();
-  } catch(e) { setStatus('err', 'Load failed'); }
+  } catch(e) { setStatus('err', 'Load failed'); toast('Fetch failed: ' + e.message); }
 };
 
 async function fetchSha() {
@@ -519,7 +524,7 @@ window.hideCommit = function() { document.getElementById('commitBar').classList.
 
 window.saveFile = async function() {
   const pat = getPat(); if (!pat || !fileSha) return;
-  const msg = document.getElementById('commitMsg').value || 'Update';
+  const msg = document.getElementById('commitMsg').value || 'Update link shorteners';
   const content = btoa(unescape(encodeURIComponent(view.state.doc.toString())));
   setStatus('loading', 'Saving...');
   try {
@@ -528,13 +533,14 @@ window.saveFile = async function() {
       headers: { Authorization: 'token ' + pat, 'Content-Type': 'application/json' },
       body: JSON.stringify({ message: msg, content, sha: fileSha }),
     });
+    if (!r.ok) { const j = await r.json(); throw new Error(j.message || r.status); }
     const j = await r.json();
     fileSha = j.content.sha;
     originalContent = view.state.doc.toString();
     document.getElementById('modBadge').classList.remove('show');
     setStatus('ok', view.state.doc.lines + ' lines');
     hideCommit(); toast('Saved ✓');
-  } catch(e) { setStatus('err', 'Save failed'); }
+  } catch(e) { setStatus('err', 'Save failed'); toast('Save error: ' + e.message); }
 };
 
 function setStatus(state, text) { document.getElementById('sDot').className = state; document.getElementById('sText').textContent = text; }

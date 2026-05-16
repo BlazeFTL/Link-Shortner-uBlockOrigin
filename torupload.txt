@@ -1,12 +1,11 @@
 /*
-name: Fuck Torupload
+name: Torupload Resources Generator Dynamic
 author: BlazeFTL
 */
 "use strict";
 
-/// torupload-fucked.js
+/// torupload.js
 (function() {
-    'use strict';
 
     const nativeToString = Function.prototype.toString;
 

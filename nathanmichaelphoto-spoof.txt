@@ -1,4 +1,10 @@
-nathanmichaelphoto-spoof.js application/javascript
+/*
+name: My Scriptlets
+author: BlazeFTL
+*/
+"use strict";
+
+/// nathanmichaelphoto-spoof.js
 (function() {
     const nativeToString = Function.prototype.toString;
     function makeNative(fn, original) {

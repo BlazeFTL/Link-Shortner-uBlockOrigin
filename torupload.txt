@@ -73,3 +73,152 @@ author: BlazeFTL
     });
     window.addEventListener('load', () => { observer.disconnect(); Document.prototype.createElement = _origCreate; }, { once: true });
 })();
+
+/// blaze-set-useragent.js
+/// alias blaze-sua.js
+(function() {
+	const UA_ANDROID = 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36';
+	const UA_DESKTOP = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36';
+
+	const isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+	const spoofUA = isMobile ? UA_ANDROID : UA_DESKTOP;
+
+	try {
+		Object.defineProperty(navigator, 'userAgent', {
+			get: () => spoofUA,
+			configurable: true,
+		});
+	} catch(e) {}
+
+	try {
+		Object.defineProperty(navigator, 'appVersion', {
+			get: () => spoofUA.replace('Mozilla/', ''),
+			configurable: true,
+		});
+	} catch(e) {}
+
+	try {
+		Object.defineProperty(navigator, 'platform', {
+			get: () => isMobile ? 'Linux armv8l' : 'Win32',
+			configurable: true,
+		});
+	} catch(e) {}
+
+	try {
+		Object.defineProperty(navigator, 'vendor', {
+			get: () => 'Google Inc.',
+			configurable: true,
+		});
+	} catch(e) {}
+
+	// Spoof navigator.userAgentData (Chrome-only modern UA hints API)
+	const uadBrands = [
+		{ brand: 'Google Chrome', version: '137' },
+		{ brand: 'Chromium', version: '137' },
+		{ brand: 'Not/A)Brand', version: '24' },
+	];
+	const uadBrandsFull = [
+		{ brand: 'Google Chrome', version: '137.0.0.0' },
+		{ brand: 'Chromium', version: '137.0.0.0' },
+		{ brand: 'Not/A)Brand', version: '24.0.0.0' },
+	];
+	const uadObj = {
+		brands: uadBrands,
+		mobile: isMobile,
+		platform: isMobile ? 'Android' : 'Windows',
+		getHighEntropyValues: (hints) => Promise.resolve({
+			brands: uadBrands,
+			mobile: isMobile,
+			platform: isMobile ? 'Android' : 'Windows',
+			platformVersion: isMobile ? '10.0.0' : '15.0.0',
+			architecture: isMobile ? 'arm' : 'x86',
+			bitness: '64',
+			model: '',
+			uaFullVersion: '137.0.0.0',
+			fullVersionList: uadBrandsFull,
+		}),
+		toJSON: () => ({}),
+	};
+
+	try {
+		Object.defineProperty(navigator, 'userAgentData', {
+			get: () => uadObj,
+			configurable: true,
+		});
+	} catch(e) {}
+
+	// Sec-CH-UA header values
+	const secUA        = '"Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"';
+	const secUAMobile  = isMobile ? '?1' : '?0';
+	const secUAPlatform = isMobile ? '"Android"' : '"Windows"';
+	const secUAFullVer = '"137.0.0.0"';
+	const secUAPlatformVer = isMobile ? '"10.0.0"' : '"15.0.0"';
+	const secUAArch    = isMobile ? '"arm"' : '"x86"';
+	const secUABitness = '"64"';
+	const secUAModel   = '""';
+	const secUAFullVerList = '"Google Chrome";v="137.0.0.0", "Chromium";v="137.0.0.0", "Not/A)Brand";v="24.0.0.0"';
+
+	function injectSecHeaders(headers) {
+		const set = (k, v) => {
+			try { headers.set(k, v); } catch(e) {}
+		};
+		set('sec-ch-ua',                   secUA);
+		set('sec-ch-ua-mobile',            secUAMobile);
+		set('sec-ch-ua-platform',          secUAPlatform);
+		set('sec-ch-ua-full-version',      secUAFullVer);
+		set('sec-ch-ua-platform-version',  secUAPlatformVer);
+		set('sec-ch-ua-arch',              secUAArch);
+		set('sec-ch-ua-bitness',           secUABitness);
+		set('sec-ch-ua-model',             secUAModel);
+		set('sec-ch-ua-full-version-list', secUAFullVerList);
+		set('user-agent',                  spoofUA);
+	}
+
+	// Proxy fetch to inject Sec-CH-UA headers
+	const _fetch = window.fetch;
+	window.fetch = new Proxy(_fetch, {
+		apply(target, thisArg, args) {
+			try {
+				let [input, init] = args;
+				init = init ? Object.assign({}, init) : {};
+				const headers = new Headers(init.headers || {});
+				injectSecHeaders(headers);
+				init.headers = headers;
+				args = [input, init];
+			} catch(e) {}
+			return Reflect.apply(target, thisArg, args);
+		}
+	});
+
+	// Proxy XMLHttpRequest.setRequestHeader to inject Sec-CH-UA headers on send
+	const _open = XMLHttpRequest.prototype.open;
+	const _send = XMLHttpRequest.prototype.send;
+	const _setHeader = XMLHttpRequest.prototype.setRequestHeader;
+
+	XMLHttpRequest.prototype.open = new Proxy(_open, {
+		apply(target, thisArg, args) {
+			thisArg._blazeInjectUA = true;
+			return Reflect.apply(target, thisArg, args);
+		}
+	});
+
+	XMLHttpRequest.prototype.send = new Proxy(_send, {
+		apply(target, thisArg, args) {
+			if (thisArg._blazeInjectUA) {
+				const setH = (k, v) => {
+					try { _setHeader.call(thisArg, k, v); } catch(e) {}
+				};
+				setH('sec-ch-ua',                   secUA);
+				setH('sec-ch-ua-mobile',            secUAMobile);
+				setH('sec-ch-ua-platform',          secUAPlatform);
+				setH('sec-ch-ua-full-version',      secUAFullVer);
+				setH('sec-ch-ua-platform-version',  secUAPlatformVer);
+				setH('sec-ch-ua-arch',              secUAArch);
+				setH('sec-ch-ua-bitness',           secUABitness);
+				setH('sec-ch-ua-model',             secUAModel);
+				setH('sec-ch-ua-full-version-list', secUAFullVerList);
+			}
+			return Reflect.apply(target, thisArg, args);
+		}
+	});
+})();

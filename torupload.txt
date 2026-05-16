@@ -1,39 +1,29 @@
 /*
-name: Torupload Resources Generator Dynamic
+name: Torupload Resources Dynamic Generator
 author: BlazeFTL
 */
 "use strict";
 
 /// torupload.js
 (function() {
-
     const nativeToString = Function.prototype.toString;
-
     function makeNative(fn, original) {
         const name = original.name || '';
         fn.toString = function() { return `function ${name}() { [native code] }`; };
         return fn;
     }
-
     const _e = [];
     const _seen = new Set();
-
     function addEntry(url, type) {
         if (!url || _seen.has(url)) return;
         try { new URL(url); } catch { return; }
         _seen.add(url);
         _e.push({ url, type: type || 'script', d: Math.floor(Math.random() * 900) + 30 });
     }
-
     function findDescriptor(obj, prop) {
         let proto = obj;
-        while (proto) {
-            const d = Object.getOwnPropertyDescriptor(proto, prop);
-            if (d) return d;
-            proto = Object.getPrototypeOf(proto);
-        }
+        while (proto) { const d = Object.getOwnPropertyDescriptor(proto, prop); if (d) return d; proto = Object.getPrototypeOf(proto); }
     }
-
     function scanNode(node) {
         if (!node || !node.tagName) return;
         const tag = node.tagName.toUpperCase();
@@ -41,7 +31,6 @@ author: BlazeFTL
         else if (tag === 'LINK' && node.rel === 'stylesheet' && node.href) addEntry(node.href, 'css');
         else if (tag === 'IMG' && node.src) addEntry(node.src, 'img');
     }
-
     const _origCreate = Document.prototype.createElement;
     Document.prototype.createElement = makeNative(function createElement(tag) {
         const el = _origCreate.apply(this, arguments);
@@ -57,61 +46,30 @@ author: BlazeFTL
         }
         return el;
     }, _origCreate);
-
     const observer = new MutationObserver(mutations => {
-        for (const m of mutations)
-            for (const node of m.addedNodes) scanNode(node);
+        for (const m of mutations) for (const node of m.addedNodes) scanNode(node);
     });
     observer.observe(document.documentElement || document, { childList: true, subtree: true });
-
     const generateEntry = (item) => ({
-        name: item.url,
-        initiatorType: item.type,
-        duration: item.d,
-        startTime: Math.random() * 100,
-        entryType: 'resource',
-        nextHopProtocol: 'h2',
-        renderBlockingStatus: 'non-blocking',
-        workerStart: 0, redirectStart: 0, redirectEnd: 0,
+        name: item.url, initiatorType: item.type, duration: item.d,
+        startTime: Math.random() * 100, entryType: 'resource', nextHopProtocol: 'h2',
+        renderBlockingStatus: 'non-blocking', workerStart: 0, redirectStart: 0, redirectEnd: 0,
         fetchStart: 10, domainLookupStart: 10, domainLookupEnd: 12,
         connectStart: 12, connectEnd: 15, secureConnectionStart: 13,
         requestStart: 16, responseStart: 20, responseEnd: item.d + 20,
         transferSize: Math.floor(Math.random() * 5000) + 1000,
         encodedBodySize: 1000, decodedBodySize: 3000, serverTiming: []
     });
-
     const _p = Performance.prototype;
-    const _getEntries       = _p.getEntries;
+    const _getEntries = _p.getEntries;
     const _getEntriesByType = _p.getEntriesByType;
     const _getEntriesByName = _p.getEntriesByName;
-
-    _p.getEntries = makeNative(function() {
-        return [..._getEntries.apply(this, arguments), ..._e.map(generateEntry)];
-    }, _getEntries);
-
-    _p.getEntriesByType = makeNative(function(type) {
-        const real = _getEntriesByType.apply(this, arguments);
-        return type === 'resource' ? [...real, ..._e.map(generateEntry)] : real;
-    }, _getEntriesByType);
-
-    _p.getEntriesByName = makeNative(function(name) {
-        const item = _e.find(x => x.url === name);
-        return item ? [generateEntry(item)] : _getEntriesByName.apply(this, arguments);
-    }, _getEntriesByName);
-
-    const _fnToString = Function.prototype.toString;
+    _p.getEntries = makeNative(function() { return [..._getEntries.apply(this, arguments), ..._e.map(generateEntry)]; }, _getEntries);
+    _p.getEntriesByType = makeNative(function(type) { const real = _getEntriesByType.apply(this, arguments); return type === 'resource' ? [...real, ..._e.map(generateEntry)] : real; }, _getEntriesByType);
+    _p.getEntriesByName = makeNative(function(name) { const item = _e.find(x => x.url === name); return item ? [generateEntry(item)] : _getEntriesByName.apply(this, arguments); }, _getEntriesByName);
     Object.defineProperty(Function.prototype, 'toString', {
-        value: makeNative(function toString() {
-            if (this === Function.prototype.toString) return 'function toString() { [native code] }';
-            return nativeToString.call(this);
-        }, _fnToString),
-        writable: true,
-        configurable: true
+        value: makeNative(function toString() { if (this === Function.prototype.toString) return 'function toString() { [native code] }'; return nativeToString.call(this); }, Function.prototype.toString),
+        writable: true, configurable: true
     });
-
-    window.addEventListener('load', () => {
-        observer.disconnect();
-        Document.prototype.createElement = _origCreate;
-    }, { once: true });
-
+    window.addEventListener('load', () => { observer.disconnect(); Document.prototype.createElement = _origCreate; }, { once: true });
 })();

@@ -1,0 +1,43 @@
+name: Dedupe Domain Issues
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  dedupe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.ADMIN_PAT }}
+          script: |
+            const newIssue = context.payload.issue;
+            const domain = newIssue.title.trim().toLowerCase();
+
+            const openIssues = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100
+            });
+
+            const dup = openIssues.find(i =>
+              i.number !== newIssue.number &&
+              !i.pull_request &&
+              i.title.trim().toLowerCase() === domain
+            );
+
+            if (!dup) return;
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: dup.number,
+              body: newIssue.body || '(no description)'
+            });
+
+            await github.graphql(
+              `mutation($id: ID!) { deleteIssue(input: {issueId: $id}) { clientMutationId } }`,
+              { id: newIssue.node_id }
+         
+            );

@@ -44,7 +44,7 @@ jobs:
               const nextHeading = body.indexOf('\n### ', start + marker.length);
               const end = nextHeading === -1 ? body.length : nextHeading;
               const section = body.slice(start, end).trim();
-              const collapsed = `<details><summary>Prerequisites</summary>\n\n${section}\n\n</details>`;
+              const collapsed = `<details><summary>Prerequisites</summary>\n\n${section}\n\n</details>\n`;
               return body.slice(0, start) + collapsed + body.slice(end);
             }
 

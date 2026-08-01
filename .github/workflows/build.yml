@@ -7,37 +7,76 @@ jobs:
   dedupe:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/github-script@v7
+      - name: Find duplicate and comment
+        id: find
+        uses: actions/github-script@v7
         with:
-          github-token: ${{ secrets.ADMIN_PAT }}
           script: |
             const newIssue = context.payload.issue;
             const domain = newIssue.title.trim().toLowerCase();
 
-            const openIssues = await github.paginate(github.rest.issues.listForRepo, {
+            const allIssues = await github.paginate(github.rest.issues.listForRepo, {
               owner: context.repo.owner,
               repo: context.repo.repo,
-              state: 'open',
+              state: 'all',
               per_page: 100
             });
 
-            const dup = openIssues.find(i =>
+            const dup = allIssues.find(i =>
               i.number !== newIssue.number &&
               !i.pull_request &&
               i.title.trim().toLowerCase() === domain
             );
 
-            if (!dup) return;
+            if (!dup) {
+              core.setOutput('found', 'false');
+              return;
+            }
+
+            function collapsePrereqs(body) {
+              if (!body) return body;
+              const marker = '### Prerequisites';
+              const start = body.indexOf(marker);
+              if (start === -1) return body;
+              const nextHeading = body.indexOf('\n### ', start + marker.length);
+              const end = nextHeading === -1 ? body.length : nextHeading;
+              const section = body.slice(start, end).trim();
+              const collapsed = `<details><summary>Prerequisites</summary>\n\n${section}\n\n</details>`;
+              return body.slice(0, start) + collapsed + body.slice(end);
+            }
 
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: dup.number,
-              body: newIssue.body || '(no description)'
+              body: `Reported by @${newIssue.user.login}:\n\n${collapsePrereqs(newIssue.body) || '(no description)'}`
             });
+
+            core.setOutput('found', 'true');
+            core.setOutput('dup_number', dup.number);
+            core.setOutput('was_closed', dup.state === 'closed');
+            core.setOutput('new_node_id', newIssue.node_id);
+
+      - name: Reopen and delete
+        if: steps.find.outputs.found == 'true'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.ADMIN_PAT }}
+          script: |
+            const dupNumber = ${{ steps.find.outputs.dup_number }};
+            const wasClosed = ${{ steps.find.outputs.was_closed }};
+            const newNodeId = '${{ steps.find.outputs.new_node_id }}';
+
+            if (wasClosed) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: dupNumber,
+                state: 'open'
+              });
+            }
 
             await github.graphql(
               `mutation($id: ID!) { deleteIssue(input: {issueId: $id}) { clientMutationId } }`,
-              { id: newIssue.node_id }
-         
+              { id: newNodeId }
             );

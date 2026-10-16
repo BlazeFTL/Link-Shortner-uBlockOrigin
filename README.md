@@ -4,7 +4,6 @@
 
 
 
-
 <div align="center">
   <p><i>"Link Shortner Filters for uBlockOrigin in one place for easy search."</i></p>
 </div>
@@ -12,12 +11,7 @@
 
 ---
 
-## 🛡️ Support Policy & Requirements
-Do **not** expect any help or updates regarding:
-* **Bitcoin / Crypto Faucet sites and their Link Shorteners**
-* *Requests involving these topics will be ignored.*
-
----
+## Do Not Add This As Filter Source In uBlockOrigin (Not Maintainted)
 
 ## Why this repo exist ?
 it serves as a backup for uBlockOrigin shortner thread filters

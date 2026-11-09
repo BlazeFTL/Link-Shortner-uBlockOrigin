@@ -6,16 +6,6 @@ author: BlazeFTL
 
 /// intentunwrap.js
 (function() {
-    const UA = 'Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0';
-    const spoof = (o, k, v) => {
-        try { Object.defineProperty(o, k, { get: () => v, configurable: true }); } catch (e) {}
-    };
-    const np = Object.getPrototypeOf(navigator);
-    spoof(np, 'userAgent', UA);
-    spoof(np, 'appVersion', '5.0 (X11)');
-    spoof(np, 'platform', 'Linux x86_64');
-    spoof(np, 'maxTouchPoints', 0);
-    spoof(np, 'userAgentData', undefined);
     let done = false;
     const norm = t => t.replace(/\\\//g, '/').replace(/\\u0026/gi, '&').replace(/&amp;/g, '&');
     const conv = raw => {
@@ -47,7 +37,14 @@ author: BlazeFTL
     new MutationObserver(ms => {
         for (const m of ms) m.addedNodes.forEach(scanNode);
     }).observe(document, { childList: true, subtree: true });
-    document.addEventListener('DOMContentLoaded', () => go(find(document.documentElement.innerHTML)));
+    document.addEventListener('DOMContentLoaded', () => {
+        go(find(document.documentElement.innerHTML));
+        if (done || location.hostname !== 'liteshort.com') return;
+        const code = location.pathname.replace(/^\/+|\/+$/g, '');
+        const b = document.body;
+        const empty = !b || !b.querySelector(':not(script):not(style)');
+        if (empty && /^[\w-]{3,}$/.test(code)) go('https://earn.portalresult.in/open.php?link=' + code);
+    });
     document.addEventListener('click', e => {
         const a = e.target.closest && e.target.closest('a[href^="intent:" i], a[href^="market:" i]');
         if (a) {
